@@ -1,1 +1,1 @@
-# aws-cicd-container-on-fargate
+# Welcome to our auto-scaling repository
