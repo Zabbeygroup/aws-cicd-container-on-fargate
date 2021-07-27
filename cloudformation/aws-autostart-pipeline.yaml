@@ -30,7 +30,7 @@ Parameters:
     
   TemplateBucket:
     Type: String
-    Default: cf-templates-bucket
+    Default: zabbeygroup-cf-templates-bucket
     Description: >
       The S3 bucket from which to fetch the templates used by this stack.
 
@@ -84,7 +84,7 @@ Resources:
         Cluster: !GetAtt Cluster.Outputs.ClusterName
         Service: !GetAtt Service.Outputs.Service
         LoadBalancer: !GetAtt LoadBalancer.Outputs.LoadBalancer
-      
+    
   DeploymentPipeline:
     Type: AWS::CloudFormation::Stack
     Properties:
