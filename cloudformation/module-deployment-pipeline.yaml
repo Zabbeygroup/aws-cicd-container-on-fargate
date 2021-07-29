@@ -13,8 +13,8 @@ Parameters:
     Type: String
     NoEcho: true
 
-  GitHubUser:
-    Type: String
+  #GitHubUser:
+  #  Type: String
 
   Cluster:
     Type: String
@@ -167,7 +167,7 @@ Resources:
                 Version: 1
                 Provider: GitHub
               Configuration:
-                Owner: !Ref GitHubUser
+              #  Owner: !Ref GitHubUser
                 Repo: !Ref GitHubRepo
                 Branch: !Ref GitHubBranch
                 OAuthToken: !Ref GitHubToken
