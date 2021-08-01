@@ -13,8 +13,6 @@ Parameters:
     Type: String
     NoEcho: true
 
-  #GitHubUser:
-  #  Type: String
 
   Cluster:
     Type: String
